@@ -1,0 +1,33 @@
+.error {
+  position:fixed;
+  left:50%;
+  margin-left:-145px;
+  margin-bottom:100%;
+  top:20%;
+  text-align:center;
+}
+.error-type {
+  font-size:90px;font-weight:bold;
+}
+.error-desc {
+  font-family:Arial;font-size:15px;
+  position:relative;
+}
+.retry {
+  position:fixed;
+  top:100%;margin-top:-55px;
+  width:200px;height:35px;
+  border:0;border-radius:15pc;
+  left:50%;margin-left:-100px;
+  color:white;background-color:rgba(0,0,0,0.3);
+  transition: all 0.123s ease;
+}
+.retry:hover {
+  transform: scale(1.02);
+  background-color:rgba(0,0,0,0.4);
+}
+.retry:active {
+  transform: scale(0.98);
+  background-color:rgba(0,0,0,0.5);
+}
+:focus {outline:0}
