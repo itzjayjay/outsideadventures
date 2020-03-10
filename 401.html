@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>401 Unauthorized Device</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="error">
+
+<label class="error-type">401</label>
+<label class="error-desc">Your device is unauthorized on this website.</label>
+
+<button onclick="tryAgain()" class="retry">Try again.</button>
+
+</div>
+
+</body>
+<script>
+function tryAgain() {
+var key = prompt("Please enter the password.");
+if(key == "Ni#g$[zhu?Vx7'*r0.mtx3Vt-G.j/1I@ly$DCazsb:Hd8C83[N.T-!.L6j3TfGl"){
+  window.open("home.html","_self");
+}else{
+  window.open("401.html","_self");
+}
+}
+</script>
+</html>
