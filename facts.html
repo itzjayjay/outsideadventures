@@ -2,12 +2,19 @@
 <html>
 <head>
 <title>Outdside Adventures</title>
+<link href="favicon.html">
 <style>
 .nav {
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
 }
-
+.nav a::selection {
+  display: none;
+}
 /* Style the topnav links */
 .nav a {
   float: left;
@@ -29,6 +36,8 @@
 
 
 .body {
+  position: relative;
+  top:40px;
   overflow: hidden;
   border-radius:2pc 2pc 1.5pc 1.5pc;
   background-color: #9996;
@@ -38,6 +47,12 @@
 
 .body span {
   color: #9990
+}
+.body span::selection {
+  color: #9990;
+}
+.body dot::selection {
+  display:none;
 }
 </style>
 <script>
@@ -60,10 +75,10 @@
 <ol>
 
 <li>Dusky-footed rats (a.k.a. packrats) build homes out of sticks and mud.</li>
-	• <span>|</span>Homes are domes with a 4-5 foot diameter.<br/>
-	• <span>|</span>Collect shiny objects and bring them back to their dens. These objects are called souvenirs.<br/>
-	• <span>|</span>Only females live in dens<br/>
-<li></li>
+<li>Homes are domes with a 4-5 foot diameter.</li>
+<li>Collect shiny objects and bring them back to their dens. These objects are called souvenirs.</li>
+<li>Only females live in dens</li>
+
 
 </ol>
 </div>

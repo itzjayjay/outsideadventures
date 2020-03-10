@@ -2,10 +2,14 @@
 <html>
 <head>
 <title>Outdside Adventures</title>
+<link href="favicon.html">
 <style>
 .nav {
   overflow: hidden;
   background-color: #333;
+}
+.nav a::selection {
+  display: none;
 }
 
 /* Style the topnav links */
@@ -41,6 +45,12 @@
 .body span {
   font-weight: bold;
 }
+.body span::selection {
+  display: none;
+}
+span br::selection {
+  display: none;
+}
 </style>
 <script>
 
@@ -57,7 +67,7 @@
 <a href="contact.html" style="float:right">Contact</a>
 
 </div>
-<br/>
+<span><br/></span>
 <div class="body">
 <ul>
   <li><span>Q: </span>What is the name of the rats that build houses?</li>

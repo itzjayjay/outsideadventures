@@ -2,8 +2,12 @@
 <html>
 <head>
 <title>Outdside Adventures</title>
+<link href="favicon.html">
 <style>
 .nav {
+  position:fixed;
+  left:0;top:0;
+  width:100%;
   overflow: hidden;
   background-color: #333;
 }
@@ -26,6 +30,61 @@
   background-color:green;
   cursor: default;
 }
+
+form {
+  position: fixed;
+  top:50%;left:50%;margin-left:-165px;margin-top:-90px;
+  border: none;
+}
+form input{
+  background-color: #0003;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+form label{
+  position:relative;
+  left:-5px;
+  font-weight: bold;
+}
+.msg{
+  position:relative;
+  left:-5px;
+  top:-30px;
+  font-weight: bold;
+}
+form textarea{
+  position:relative;
+  top:20px;
+  border: 1px solid;
+  background-color:#0003;
+  border-radius:10px;
+  resize: none;
+  width: 175px;
+  height: 100px;
+  overflow: auto;
+}
+form::selection {
+  display: none;
+}
+form button {
+  border: 0;
+  color: blue;
+  background-color: rgb(160,170,255);
+  width:200px;
+  height:32px;
+  border-radius:30px;
+  position:relative;
+  left:30px;top:5px;
+  font-size:20px;font-weight:bold;
+  cursor: pointer;
+}
+form button:hover {
+  border: 1px solid blue;
+}
+
+textarea:focus {outline:0;}
+input:focus {outline:0;}
+button:focus {outline:0;}
 </style>
 <script>
 
@@ -42,6 +101,13 @@
 <a class="active" style="float:right">Contact</a>
 
 </div>
+
+<form action="https://formspree.io/xrgknbav" method="POST">
+   <label>Name:</label><input class="top" type="Name" name="Name"><br/><br/>
+   <label>Email:</label><input type="Email" name="Email"><br/>
+   <label class="msg">Message:</label><textarea name="Message"></textarea><br/><br/>
+   <button type="submit">Send</button>
+</form>
 
 </body>
 </html>

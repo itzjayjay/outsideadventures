@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Outdside Adventures</title>
+<link href="favicon.html">
 <script>
 window.mobilecheck = function() {
   var check = false;
@@ -12,12 +13,25 @@ if(check == true) { window.open('mobile/home.html','_self'); }
 
 </script>
 <style>
+/* Sticky Navbar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 
 /* Navbar */
 .nav {
   overflow: hidden;
   background-color: #333;
-  position: sticky;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.nav a::selection {
+  display: none;
 }
 .nav a {
   float: left;
@@ -66,7 +80,7 @@ if(check == true) { window.open('mobile/home.html','_self'); }
 <body id="body">
 <div class="header"></div>
 
-<div class="nav">
+<div id="navbar" class="nav">
 
 <a class="active">Home</a>
 <a href="facts.html">Facts</a>
