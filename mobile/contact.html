@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Outdside Adventures</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.menu {
+  overflow: hidden;
+  background-color: #333;
+  position: absolute;
+  top:0;left:0;width:100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.menu a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.menu a:hover:not(.active) {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+  cursor: default;
+}
+</style>
+</head>
+<body>
+
+<div class="menu">
+
+<a href="javascript:void(0);" onclick="dropdown()" class="dropdown">☰</a>
+
+<div id="dropdown-content" class="dropdown-content" hidden>
+
+<a href="home.html">Home</a>
+<a href="facts.html">Facts</a>
+<a href="tl.html">Time Log</a>
+<a href="info.html">Info</a>
+<a href="qa.html">Q&A</a>
+<a class="active">Contact</a>
+
+</div>
+
+</div>
+
+</body>
+<script>
+function dropdown() {
+  var x = document.getElementById("dropdown-content");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</html>
