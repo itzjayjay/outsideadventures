@@ -35,19 +35,28 @@ body {
   display: block;
 }
 
-.menu a:hover:not(.active) {
+.menu a:active:not(.active) {
+
   background-color: #ddd;
   color: black;
 }
+
 
 .active {
   background-color: #4CAF50;
   color: white;
   cursor: default;
 }
+.img {
+  cursor: default;
+  position: relative;
+  top: 15vw;
+}
 </style>
 </head>
 <body>
+
+<a class="img" href="images/signature.jpg" title="Park Volunteer and Parent Signature." target="_blank"><img src="images/signature.jpg" width=100% style="border:1.5px solid black;margin-right:15px;"></a>
 
 <div class="menu">
 
@@ -63,7 +72,6 @@ body {
 <a href="contact.html">Contact</a>
 
 </div>
-
 </div>
 
 </body>
