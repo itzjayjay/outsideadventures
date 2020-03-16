@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Outdside Adventures</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.menu {
+  overflow: hidden;
+  background-color: #333;
+  position: absolute;
+  top:0;left:0;width:100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.menu a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.menu a:hover:not(.active) {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+  cursor: default;
+}
+
+.body {
+  overflow: hidden;
+  border-radius:2pc 2pc 1.5pc 1.5pc;
+  background-color: #9996;
+  margin: 15vw 5vw;
+  border: 0.016px solid #9997;
+}
+
+.body ul {
+  list-style-type: none;
+}
+.body span {
+  font-weight: bold;
+}
+.body span::selection {
+  display: none;
+}
+span br::selection {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<div class="body">
+<ul>
+  <li><span>Q: </span>What is the name of the rats that build houses?</li>
+  <li><span>A: </span>Dusky-footed Woodrat (a.k.a. packrat)</li>
+<br/>
+  <li><span>Q: </span>How big are their homes?</li>
+  <li><span>A: </span>4-5 foot diameter dome.</li>
+<br/>
+  <li><span>Q: </span>What behavioral differences are there compared to other rats?
+  <li><span>A: </span>Packrats tend to collect "souvenirs" and bring them to their huts. They also live in colonies.</li>
+<br/>
+  <li><span>Q: </span>What other extraordinary animals are there at Mission Trails?</li>
+  <li><span>A: </span>All the wildlife here is extraordinary.</li>
+<br/>
+  <li><span>Q: </span>What steps should a visitor take when spotting an animal in distress?</li>
+  <li><span>A: </span>Call the visitor center or find a park ranger.</li>
+<br/>
+  <li><span>Q: </span>How do the park rangers tend to injured animals?</li>
+  <li><span>A: </span>They treat any wounds and take them to Project Wildlife.</li>
+<br/>
+  <li><span>Q: </span>How often does a park visitor inform you of an injured animal?</li>
+  <li><span>A: </span>We rarely get any calls about injured animals</li>
+<br/>
+  <li><span>Q: </span>After a wildfire, what actions do the park rangers take to secure the surviving wildlife?</li>
+  <li><span>A: </span>They treat any wounds and take them to Project Wildlife.</li>
+</ul>
+</div>
+
+<div class="menu">
+
+<a href="javascript:void(0);" onclick="dropdown()" class="dropdown">☰</a>
+
+<div id="dropdown-content" class="dropdown-content" hidden>
+
+<a href="home.html">Home</a>
+<a href="facts.html">Facts</a>
+<a href="tl.html">Time Log</a>
+<a href="info.html">Info</a>
+<a class="active">Q&A</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</div>
+
+</body>
+<script>
+function dropdown() {
+  var x = document.getElementById("dropdown-content");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</html>
